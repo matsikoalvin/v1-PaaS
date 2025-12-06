@@ -18,7 +18,7 @@
   <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-100" style="background-image: url('../assets/img/bkg.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
+<body class="bg-gray-100" style="background-color: #333333; background-size: cover; background-position: center;">
   <main class="main-content d-flex align-items-center min-vh-100">
     <div class="container">
       <div class="row justify-content-center">
@@ -84,9 +84,6 @@
   </main>
 
   <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"></script>
-
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -111,7 +108,7 @@
 
       try {
         // Send login request to backend
-        const response = await fetch('http://localhost:5000/login', {
+        const response = await fetch('/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -165,7 +162,6 @@
       }
     });
   </script>
-  <script src="../assets/js/soft-ui-dashboard.min.js"></script>
 </body>
 
 </html>
